@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 //icons
-import IconGithub from '@icon/github.svg'
-import IconTwitter from '@icon/twitter.svg'
+import IconGithub from '@icon/github.svg';
+import IconTwitter from '@icon/twitter.svg';
 
 export default function Home() {
   return (
@@ -23,5 +23,5 @@ export default function Home() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

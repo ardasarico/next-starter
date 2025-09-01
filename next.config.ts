@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next'
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   webpack(config) {
@@ -9,13 +9,13 @@ const nextConfig: NextConfig = {
         {
           loader: '@svgr/webpack',
           options: {
-            icon: true
-          }
-        }
-      ]
-    })
+            icon: true,
+          },
+        },
+      ],
+    });
 
-    return config
+    return config;
   },
   turbopack: {
     rules: {
@@ -24,14 +24,14 @@ const nextConfig: NextConfig = {
           {
             loader: '@svgr/webpack',
             options: {
-              icon: true
-            }
-          }
+              icon: true,
+            },
+          },
         ],
-        as: '*.js'
-      }
-    }
-  }
-}
+        as: '*.js',
+      },
+    },
+  },
+};
 
-export default nextConfig
+export default nextConfig;
