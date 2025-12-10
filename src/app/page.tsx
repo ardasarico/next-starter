@@ -7,7 +7,7 @@ import IconTwitter from '@icon/twitter.svg';
 export default function Home() {
   return (
     <div className={'flex h-full w-full flex-col items-center justify-center gap-6'}>
-      <h1 className={'text-4xl font-semibold'}>Nextjs 15 Starter Template</h1>
+      <h1 className={'text-4xl font-semibold'}>Nextjs 16 Starter Template</h1>
       <div className={'flex items-center gap-3'}>
         <div className={'flex items-center gap-2'}>TailwindCSS v4</div>
         <div className={'flex items-center gap-2'}>Prettier</div>

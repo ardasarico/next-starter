@@ -1,7 +1,15 @@
 @import 'tailwindcss';
 
-@theme inline {
-  --font-inter: var(--font-inter);
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    'liga' 1,
+    'calt' 1;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 
 html,
@@ -20,11 +28,4 @@ body {
   background: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@theme {
-  --color-*: initial;
-
-  --color-neutral-900: #000000;
-  --color-neutral-100: #ffffff;
 }

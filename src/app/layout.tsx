@@ -1,13 +1,5 @@
 import type { Metadata } from 'next';
-
-import localFont from 'next/font/local';
 import './globals.css';
-
-const interVariable = localFont({
-  src: '../../public/assets/fonts/InterVariable.woff2',
-  display: 'swap',
-  variable: '--font-inter',
-});
 
 export const metadata: Metadata = {
   title: 'Nextjs 15 Starter Template',
@@ -21,7 +13,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interVariable.variable} h-screen min-h-fit antialiased`}>{children}</body>
+      <head>
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+      </head>
+      <body className={'h-screen min-h-fit antialiased'}>{children}</body>
     </html>
   );
 }
